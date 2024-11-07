@@ -1,0 +1,44 @@
+// capacidades que tienen las funciones al igual que otros objetos
+
+//1. pasar funciones como argumentos -> callback
+
+/*
+function a () {}
+function b () {}
+b(a());
+
+// retornar funciones
+function a () {
+    function b () {}
+    return b
+}
+
+// asignar funciones a varialbes -> Expresion de Funcion
+const a = function() {}
+
+// propiedades y metdos
+function a() {}
+const obj = {}
+a.call(obj);
+
+//anidar funciones --> Nested Functions
+function a () {
+    function b () {
+        function c () {}
+        c()
+    }
+    b()
+    
+}
+a()
+
+*/
+
+// es posible almacenar funciones en objetos?
+const rocket = {
+    name: "falcon 9",
+    launchMessage: function launchMessage() {
+        console.log('fire')
+    }
+}
+rocket.launchMessage()
